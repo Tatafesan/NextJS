@@ -1,13 +1,19 @@
 import Link from 'next/link';
+import Head from 'next/head';
+import Layout from '../../components/layout';
 
 export default function FirstPost() {
+    
     return (
-        <>
-        <img src="/images/profile.jpg" alt="Your Name" />
+        <Layout>
+        <Head>
+            <title>First Post</title>
+        </Head>
+      
         <h1>First Post</h1>
         <h2>
             <Link href="/">Voltar Home</Link>
         </h2>
-        </>
-    )
+        </Layout>
+    );
 }
